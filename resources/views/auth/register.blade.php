@@ -64,7 +64,7 @@
                             <label for="password-confirm" class="col-md-4 col-form-label text-md-right">User Type</label>
                             <div class="col-md-6">
                             <select class="form-control" name="is_admin" id="is_admin" required>
-                                <option>Select Project</option>
+                                <option>Select User Type</option>
                                 <option value="0">User</option>
                                 <option value="1">Admin</option>
                             </select>
