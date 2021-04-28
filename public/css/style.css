@@ -1,0 +1,51 @@
+.sidenav {
+
+    width: 260px;
+
+
+height: 565px;
+    background-color: #ffff99 ;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+
+    font-size: 20px;
+    color: black;
+}
+.main-area{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.sidenav li:hover {
+    background-color:  #ffff00;
+}
+.sidenav a {
+    text-decoration: none;
+}
+.sidenav ul li ul li a:hover{
+    border: red 1px solid;
+}
+
+ul li {
+    list-style: none;
+
+}
+
+ul li ul li {
+    display: none;
+
+}
+
+ul li:hover ul li {
+    display: block;
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
