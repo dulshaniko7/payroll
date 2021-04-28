@@ -1,12 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .sidenav {
 
     width: 260px;
-
-
 height: 565px;
     background-color: #ffff99 ;
-    overflow-x: hidden;
     padding-top: 20px;
+
 }
 
 /* The navigation menu links */
@@ -14,6 +17,7 @@ height: 565px;
 
     font-size: 20px;
     color: black;
+
 }
 .main-area{
     display: grid;
@@ -37,8 +41,14 @@ ul li {
 
 ul li ul li {
     display: none;
+    padding-left: 1rem;
+
 }
 ul li:hover ul li {
+    display: block;
+}
+
+ul li:active ul li{
     display: block;
 }
 

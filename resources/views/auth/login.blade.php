@@ -63,7 +63,7 @@
                                     </a>
                                 @endif
                             </div>
-                            <a href="{{ route('register') }}">New User</a>
+                            <a href="{{ route('register') }}">Register</a>
                         </div>
                     </form>
                 </div>

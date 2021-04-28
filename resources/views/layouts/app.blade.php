@@ -87,6 +87,7 @@
 <div class="main-area">
         <!-- side bar-->
         <div class="sidenav">
+
             <ul>
             @can('admin',Auth::user())
             <li><a href="{{ route('admin.index')}}">Admin</a></li>
