@@ -53,7 +53,7 @@ ul li:hover ul li {
 }
 
 .active1{
-
+display: block;
     background-color: yellow;
 }
 @media screen and (max-height: 450px) {

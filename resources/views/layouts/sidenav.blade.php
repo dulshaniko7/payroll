@@ -5,11 +5,11 @@
         @endcan
         <li class="{{ request()->is('user/*')  ? 'active1' : '' }}"> <a href="#">Personal</a>
             <ul>
-                <li><a href="{{ route('personal.index')}}">Personal Details</a></li>
-                <li><a href="{{ route('personal.contact')}}">Contact Details</a></li>
-                <li><a href="{{ route('personal.emergency')}}">Emergency Details</a></li>
-                <li><a href="{{ route('personal.photo')}}">Photograph</a></li>
-                <li><a href="{{ route('personal.special')}}">Special Leave</a></li>
+                <li class="{{ request()->is('user/*')  ? 'active1' : '' }}"><a href="{{ route('personal.index')}}">Personal Details</a></li>
+                <li class="{{ request()->is('user/*')  ? 'active1' : '' }}"><a href="{{ route('personal.contact')}}">Contact Details</a></li>
+                <li class="{{ request()->is('user/*')  ? 'active1' : '' }}"><a href="{{ route('personal.emergency')}}">Emergency Details</a></li>
+                <li class="{{ request()->is('user/*')  ? 'active1' : '' }}"><a href="{{ route('personal.photo')}}">Photograph</a></li>
+                <li class="{{ request()->is('user/*')  ? 'active1' : '' }}"><a href="{{ route('personal.special')}}">Special Leave</a></li>
             </ul></li>
         @can('admin',Auth::user())
         <li class="{{ request()->is('admin/transfer') ? 'active1' : '' }}"><a class="{{ request()->is('admin/*') ? 'active' : '' }}" href="{{ route('admin.transfer')}}">Transfer</a></li>
