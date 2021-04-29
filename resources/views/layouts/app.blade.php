@@ -27,8 +27,10 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+
 </head>
 <body>
     <div id="app">
@@ -86,31 +88,8 @@
         </nav>
 <div class="main-area">
         <!-- side bar-->
-        <div class="sidenav">
+    @include('layouts.sidenav')
 
-            <ul>
-            @can('admin',Auth::user())
-            <li><a href="{{ route('admin.index')}}">Admin</a></li>
-            @endcan
-            <li> <a href="#">Personal</a>
-                <ul>
-                    <li><a href="{{ route('personal.index')}}">Personal Details</a></li>
-                    <li><a href="{{ route('personal.contact')}}">Contact Details</a></li>
-                    <li><a href="{{ route('personal.emergency')}}">Emergency Details</a></li>
-                    <li><a href="{{ route('personal.photo')}}">Photograph</a></li>
-                    <li><a href="{{ route('personal.special')}}">Special Leave</a></li>
-                </ul></li>
-            @can('admin',Auth::user())
-            <li><a href="{{ route('admin.transfer')}}">Transfer</a></li>
-            @endcan
-            @can('admin',Auth::user())
-           <li> <a href="{{ route('admin.reports')}}">Reports</a></li>
-            @endcan
-                @can('admin',Auth::user())
-                <li> <a href="{{ route('admin.payroll')}}">Payroll</a></li>
-                @endcan
-            </ul>
-        </div>
     <div class="con">
         <main class="py-4">
             @yield('content')

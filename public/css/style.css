@@ -48,10 +48,14 @@ ul li:hover ul li {
     display: block;
 }
 
-ul li:active ul li{
-    display: block;
+.ppp{
+    color: red;
 }
 
+.active1{
+
+    background-color: yellow;
+}
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
